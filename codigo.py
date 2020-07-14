@@ -8,8 +8,7 @@ from joblib import Parallel, delayed
 import scipy.stats
 import math
 
-#Função para calcular o intervalo de confiança
-#Código retirado de https://stackoverflow.com/questions/15033511/compute-a-confidence-interval-from-sample-data
+#Função para calcular o intervalo de confiança, retirada de https://stackoverflow.com/questions/15033511/compute-a-confidence-interval-from-sample-data
 def interval_conf(data, confidence=0.95):
     a = 1.0 * np.array(data)
     n = len(a)
